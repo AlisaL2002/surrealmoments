@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surreal Moments</title>          
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <input type="checkbox" class="menu_bar" id="menu_bar">   <!-- Using hidden checkbox method to create the hamburger menu -->
+    <label class="menu_icon" for="menu_bar">   <!-- Using label for the menu icon since it's a checkbox -->
+        <div></div>
+        <div></div>         <!-- Creates three striped for the hamburger menu -->
+        <div></div>
+    </label>
+
+    <div class="menu" for="menu_bar"> 
+        <div class="divider"></div>   <!-- Adds space at the top of menu when opened for items to appear more organized -->
+                <a href="#">Artwork</a>   <!-- Using # as a link placeholder -->
+                <a href="#">Artists</a> 
+                <a href="#">Sources</a> 
+    </div>    
+
+    <div id="TitleImage">
+        <h1>Surreal Moments</h1>    <!--Title of the website-->
+        <img class="image" src="Dream.jpeg" alt="Main Image">
+    </div>    
+
+    <h2>History</h2>
+
+    <article class="history_text">
+        <p>Surrealism originally started as a literary movement in the late 1910s and early '20s.
+            It experimented with a new mode of expression called automatic writing, which aimed to release the uncontrolled imagination of the human subconsciousness. Not too long after, it spread all across Europe and became an international social and political movement. What was so special about the new movement is that it completely disregarded the traditions cultivated a decade earlier by Dadaism.
+            <br>
+            <br>
+            Surrealism seemed like an intriguing movement to many artists of the 20th century. It was so new and fascinating that it prompted many experiments that affected and explored the human consciousness. Hypnotism was one of those experiments. A group of curious artists, among which were André Breton and Max Ernst, utilized it as a means to access unconscious creativity; however, later decided the experiments were dangerous.
+            <br>
+            <br>
+            You can’t necessarily define surrealism as abstract or representational art. A surreal image is not exactly what you see on a canvas, but at the same time, it is all the things you see at once. There are no specific rules when it comes to understanding or interpreting it. Surreal artists explore profound personal rather than social topics like the Dada Movement did and the most fascinating parts of our minds, such as consciousness, as well as the world of dreams (inspired by Sigmund Freud’s theories of dreams) and the irrational in their art. 
+            <br>
+            <br>
+            Nowadays, the Surrealism Art Movement's <strong>legacy</strong> lives on. Many modern museums, including The Metropolitan Museum of Art (MET), The Museum of Modern Art (MoMA), and The Dalí in the United States, display many paintings of such influential artists as Salvador Dali, René Magritte, and Max Ernst. The museums and galleries serve to pass on the legacy and introduce the younger generation to various artistic movements, including Surrealism.
+        </p>
+        <!--History section of the website.
+            The sources where I got the information form:
+            https://www.metmuseum.org/toah/hd/surr/hd_surr.htm
+            https://www.history.com/topics/art-history/surrealism-history
+            https://www.tate.org.uk/art/art-terms/s/surrealism -->
+    </article>
+
+        <h2>Influential Artists</h2> 
+            <div class="artists_photos">        <!--Influential artists + their name as a button underneeth each photo-->
+                <div class="image_item">
+                    <img src="Dali.jpeg" alt="Salvador Dali" width="200px" height="200px" class="artist"> <br>
+                    <button>Salvador Dali</button>
+                </div>
+                <div class="image_item">
+                    <img src="Magritte.jpeg" alt="René Magritte" width="200px" height="200px" class="artist"> <br>
+                    <button>René Magritte</button>
+                </div>
+                <div class="image_item">
+                    <img src="Picasso.jpeg" alt="Pablo Picasso" width="200px" height="200px" class="artist"> <br>
+                    <button>Pablo Picasso</button>
+                </div>
+                <div class="image_item">
+                    <img src="Breton.jpg" alt="André Breton" width="200px" height="200px" class="artist"> <br>
+                    <button>André Breton</button>
+                </div>
+                <div class="image_item">
+                    <img src="ernst.jpeg" alt="Max Ernst" width="200px" height="200px" class="artist"> <br>
+                    <button>Max Ernst</button>
+                </div>
+            </div>
+
+        <h2>Artwork</h2>
+
+        <div class="artwork_photos">
+            <div class="artwork_content1">  <!--Artowrk phtots are placed in two differnt classes to display a certain way on the page-->
+                <div>
+                    <img src="img1.jpeg" alt="img1" width="350px" height="200px" class="Lovers" id="artwork">
+                    <p class="Lovers_Text">The Lovers<br>by René Magritte</p>
+                </div>
+                <div>  
+                    <img src="img2.jpeg" alt="igm2" width="350px" height="200px" class="Persistence" id="artwork">
+                    <p class="Persistence_Text">The Persistence of Memory<br>by Salvador Dalí</p>
+                </div>
+                <div>
+                    <img src="img3.jpeg" alt="img3" width="350px" height="200px" class="Pipe" id="artwork">
+                    <p class="Pipe_Text">The Treachery of Images<br>by René Magritte</p>
+                </div>
+            </div>
+            <div class="artwork_content2">
+                <div>
+                    <img src="img4.jpeg" alt="img4" width="350px" height="200px" class="Golconda" id="artwork">
+                    <p class="Golconda_Text">Golconda<br>by René Magritte</p>
+                </div>
+                <div>
+                    <img src="img5.jpeg" alt="img5" width="350px" height="200px" class="TheSonOfMan" id="artwork">
+                    <p class="TheSonOfMan_Text">The Son of Man<br>by René Magritte</p>
+                </div>
+                <div>
+                    <img src="img6.jpeg" alt="img6" width="350px" height="200px" class="Metamorphosis" id="artwork">
+                    <p class="Metamorphosis_Text">Metamorphosis of Narcissus<br>by Salvador Dalí</p>
+                </div>
+        </div>
+        <div class="button_container">      <!-- The fake dropdown button for artwork section-->
+            <button class="more_button">More &#9660;</button>
+        </div>
+
+         <footer>
+
+            <img src="clock.png" alt="clock" width="450px" class="clock_img">        <!--Accent clock image in the footer-->
+
+            <div class="footer_text1">
+                <p>Want to Learn More<br>About Surrealism or Art<br>in General?</p>
+           </div> 
+           <div class="footer_text2">
+                <p>Follow Us on<br>Social Media!</p>
+            </div>
+            
+            <div class="sm_icons">       <!--Social media icons-->
+                <img src="facebook.png" alt="facebook icon" width="20px" height="20px" class="icons_content">
+                <img src="twitter.png" alt="twitter icon" width="20px" height="20px" class="icons_content">
+                <img src="linkedin.png" alt="linkedin icon" width="20px" height="20px" class="icons_content">
+                <img src="instagram.png" alt="instagram icon" width="20px" height="20px" class="icons_content">
+            </div>
+            <br>
+            <br>
+            <div class="bottom_text">
+                <p><img src="envelope.png" alt="email icon" width="20px" height="20px" class="envelope"><a href="mailto:email.adress@gmail.com" class="bottom_items">email.adress@gmail.com</a></p> <!--The mailto: attribute makes a clickable email adress, which would send a user straight to a mail app on their device-->
+                <a href="#" class="bottom_items">Find all the Sources here</a>
+                <a href="#" class="bottom_items">About Us</a>
+            </div>
+        </footer>
+</body>
+</html>  

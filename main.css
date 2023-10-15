@@ -1,0 +1,375 @@
+  body {
+    background-color: #2f4f4f;
+    margin: 0;  /* Setting margin to 0 so that the img covers the entire page from left to right without spaces */
+  }
+
+  .menu_bar {
+    display: none;    /* Hides the checkbox */
+  }
+
+  .menu_icon {
+    display: block;     /* Tells the items to display as block-level elements */
+    cursor: pointer;    /* Changes how cursor looks when hovered over the menu icon */
+    padding: 10px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 999;   /* Makes the menu icon appears on top */
+  }
+
+  .menu_icon:hover {
+    background-color: #ffffff37;   /* Highlights the menu icon when hovered over */
+  }
+
+  .menu a:hover {
+    background-color: #f2f2f2e6;   /* Highlights the menu items when hovered over */
+  }
+
+  .menu_bar:checked ~ .menu {
+    left: 0px;   /* The menu appears into view from left when open */
+  }
+
+.menu_icon div {   /* Styling menu Stripes */
+  width: 30px;
+  height: 3px;
+  background-color: rgba(255, 252, 252, 0.966);
+  margin: 7px 0;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: -250px;   /* Hiddes menu to the left when not open */
+  width: 250px;   /* Displays menu to the left when open */
+  height: 100%;
+  background-color: #ffffffbc;
+  z-index: 998;   /* Makes the menu appears above any other content */
+  transition: left 0.4s;    /* Makes transition smoother when opening the menu*/
+  display: flex;
+  flex-direction: column;   /* Arranges menu items in a column */
+}
+
+.divider {
+  height: 60px;   /* Adds space on top of the menu to appear more organized */
+}
+
+.menu a {      /* Styling for the menu contents */
+  color: #333;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  padding: 20px;    /* Adds more space in between the menu items */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+  h1 {
+    text-align: center;
+    z-index: 100;        /* Place text on top of the image */
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);     /* Centers the text*/
+    width: 100%;
+    margin: auto;
+    color: white;
+    font-size: 70px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: lighter;
+  }
+ 
+  .image {
+    filter: brightness(50%);
+    height: 100%;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  #TitleImage {
+    position: relative;
+    text-align: center; /* Centers text horizontally */
+    display: flex;
+    align-items: center; /* Centers text vertically */
+  }
+
+  h2 {
+    text-align: center;
+    margin: auto;
+    color: white;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    margin-bottom: 40px;
+  }
+
+  .history_text {
+    text-align: left;
+    color: rgb(212, 210, 210);
+    font-size: 16px;
+    line-height: 135%;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 100px;
+    font-family: 'Mulish', sans-serif;
+    font-weight:100;
+  }
+
+  .artists_photos {
+    display: flex;    /* Displays photos in one line*/
+    justify-content: center;  /* Centered horizontally*/
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 100px; 
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+  .image_item {
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .image_item button {
+    padding: 10px 15px;
+    background-color: #f1f1f1af;
+    color: #000000;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Mulish', sans-serif;
+    font-weight:100;
+  }
+  .image_item button:hover {
+    background-color: #ffffffe0;   /* Highlights the button when hovered over */
+  }
+
+  .artist {
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .artwork_photos {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 5px;
+    
+  }
+  .artwork_content1, .artwork_content2 {
+    display: flex;
+    justify-content: center;  /* Centered horizontal */
+    margin-left: 120px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+  }
+
+  #artwork {
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    cursor: pointer; 
+  }
+
+  .Lovers:hover {
+    filter: brightness(35%); /* changes the brightnes of the image */
+   }
+  .Lovers_Text {
+    visibility: hidden;    /* Hides the text initially */
+    text-align: left;
+    z-index: 100;        /* Place text on top of the image */
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -60px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 100;
+  }
+  .Lovers:hover ~ .Lovers_Text {
+    visibility: visible;
+  }
+
+  .Persistence:hover {
+    filter: brightness(35%); /* changes the brightnes of the image */
+   }
+  .Persistence_Text {
+    visibility: hidden;    /* Hides the text initially */
+    text-align: left;
+    z-index: 100;        /* Place text on top of the image */
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -60px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 100;
+  }
+  .Persistence:hover ~ .Persistence_Text {
+    visibility: visible;
+  }
+
+  .Pipe:hover {
+    filter: brightness(35%); /* changes the brightnes of the image */
+   }
+  .Pipe_Text {
+    visibility: hidden;    /* Hides the text initially */
+    text-align: left;
+    z-index: 100;        /* Place text on top of the image */
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -60px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 100;
+  }
+  .Pipe:hover ~ .Pipe_Text {
+    visibility: visible;
+  }
+
+  .Golconda:hover {
+    filter: brightness(35%); /* changes the brightnes of the image */
+   }
+  .Golconda_Text {
+    visibility: hidden;    /* Hides the text initially */
+    text-align: left;
+    z-index: 100;        /* Place text on top of the image */
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -60px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 100;
+  }
+  .Golconda:hover ~ .Golconda_Text {
+    visibility: visible;
+  }
+
+  .TheSonOfMan:hover {
+    filter: brightness(35%); /* changes the brightnes of the image */
+   }
+  .TheSonOfMan_Text {
+    visibility: hidden;    /* Hides the text initially */
+    text-align: left;
+    z-index: 100;        /* Place text on top of the image */
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -60px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 100;
+  }
+  .TheSonOfMan:hover ~ .TheSonOfMan_Text {
+    visibility: visible;
+  }
+
+  .Metamorphosis:hover {
+    filter: brightness(35%); /* changes the brightnes of the image */
+   }
+  .Metamorphosis_Text {
+    visibility: hidden;    /* Hides the text initially */
+    text-align: left;
+    z-index: 100;        /* Place text on top of the image */
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -60px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 100;
+  }
+  .Metamorphosis:hover ~ .Metamorphosis_Text {
+    visibility: visible;
+  }
+
+  .button_container {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  .more_button {
+    background-color: transparent; 
+    color: rgba(255, 255, 255, 0.711);
+    padding: 10px 20px;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+  }
+  .more_button:hover {
+    color: #ffffff;   /* Highlights the button when hovered over */
+  }
+
+  footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);  /* Adds a line before the footer */
+  }
+
+  .clock_img {
+    margin-top: -170px;
+    float: right;
+    margin-right: -50px;
+  }
+
+  .footer_text1 {
+    color: white;
+    font-size: 25px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 100;
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+
+  .footer_text2 {
+    color: rgb(112, 167, 255);
+    font-size: 25px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 100;
+    margin-left: 50px;
+  }
+
+  .sm_icons {
+    position: absolute;
+    filter: brightness(0) invert(1);   /* Changes the color of the icons to white */
+    margin-left: 50px;
+  }
+  .icons_content {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .envelope {
+    filter: brightness(0) invert(1);   /* Changes the color of the icon to white */
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: -25px;
+  }
+
+  .bottom_items:hover {
+      color: rgb(112, 167, 255);   /* Highlights the links when hovered over */
+      text-decoration:underline;
+     }
+  
+  .bottom_text {
+    font-size: 10px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    margin-left: 314px;
+    text-align: center; /* Center align the items horizontally */
+  }
+
+ 
+    /* Styling links and paragraphs in the bottom text */
+  .bottom_text a, .bottom_text p {
+      vertical-align: middle;
+      display: inline-block; /* Centers items */
+      margin: 0 30px; /* Adds margin for spacing */
+      white-space: nowrap; /* Prevent wrapping of text */
+      text-decoration: none;
+      color:white;
+      
+  }
